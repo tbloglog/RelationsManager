@@ -1,6 +1,6 @@
-### Relations Manager
+# Relations Manager
 
-## Example: 
+### Example: 
  - Object A (doctypealias objA)
  - Object B (doctypealias objB)
  - RelazioneTest (It's our RelationTypeAlias)
@@ -11,7 +11,7 @@
 4) Save
 5) Add this datatype to objA document type
 
-## And repeat for object B
+And repeat for object B
 
 1) Create dataType of type "Relazioni manager"
 2) Set "Oggetto Relazione" objA
