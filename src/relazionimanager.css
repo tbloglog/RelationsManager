@@ -1,0 +1,72 @@
+﻿ul.RelObjsContainer {
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.RelationListcontainer {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+li.SingleRelObj {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-bottom: 0;
+}
+
+li.SingleRelObj:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+a.AddRelation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+
+a.AddRelation:hover {
+    background-color: #66BB6A;
+    color: #fff;
+}
+
+a.RemoveRelation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+
+a.RemoveRelation:hover{
+    background-color: #D32F2F
+;
+    color: #fff;
+}
+
+.RelationsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+span.infoTitle {
+    color: #1b264f;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.searchinput{
+	 margin-bottom: 20px !important;
+    width: 100%;
+}

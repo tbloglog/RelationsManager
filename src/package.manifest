@@ -1,0 +1,42 @@
+﻿{
+  // you can define multiple editors
+  "propertyEditors": [
+    {
+      /*this must be a unique alias*/
+      "alias": "relazionimanager",
+      /*the name*/
+      "name": "Relazioni manager",
+      /*the icon*/
+      "icon": "icon-shuffle",
+
+      /*the HTML file we will load for the editor*/
+      "editor": {
+        "view": "~/App_Plugins/RelazioniManager/relazionimanager.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Oggetto Relazione",
+            "description": "Alias dell'oggetto da relazionare",
+            "key": "OggettoRelazione",
+            "view": "textstring"
+          },
+          {
+            "label": "Nome Relazione",
+            "description": "Nome della relazione da usare",
+            "key": "RelationAlias",
+            "view": "textstring"
+          }
+        ]
+      }
+    }
+  ],
+  // array of files we want to inject into the application on app_start
+  "javascript": [
+    "~/App_Plugins/RelazioniManager/relazionimanager.controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/RelazioniManager/relazionimanager.css"
+  ]
+}

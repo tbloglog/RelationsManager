@@ -1,0 +1,32 @@
+﻿<div ng-controller="RelazioniManager.EditRelationsController">
+    
+    <div class="RelationsContainer">
+        
+        <div class="RelationListcontainer">
+            <span class="infoTitle">Da Relazionare</span>
+			<input type="text" ng-model="filterOTRSearch" ng-change="filterObjectsToRelate(filterOTRSearch)" class="searchinput"/>
+            <ul class="RelObjsContainer">
+                <li class="SingleRelObj" ng-if="!obj.hide" ng-repeat="obj in ObjectsToRelate" data-id="{{obj.Id}}">
+                    <span>{{obj.Name}}</span>
+                    <a href="javascript:;" class="AddRelation" ng-click="Add(obj.Id)">+</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="RelationListcontainer">
+            <span class="infoTitle">Relazionati</span>
+			<input type="text" ng-model="filterSearch" ng-change="filterObjects(filterSearch)" class="searchinput"/>
+            <ul class="RelObjsContainer">
+                <li class="SingleRelObj" ng-if="!RelObj.hide" ng-repeat="RelObj in RelatedObjects" data-id="{{RelObj.Id}}" data-relid="{{RelObj.RelationId}}">
+                    <span>{{RelObj.Name}}</span>
+                    <a href="javascript:;" class="RemoveRelation" ng-click="Delete(RelObj.RelationId,RelObj.Id,RelObj.Name)">-</a>
+                </li>
+            </ul>
+        </div>
+
+       
+    </div>
+
+   
+
+</div>
